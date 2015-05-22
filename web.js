@@ -51,7 +51,6 @@ HTTP.createServer(function(request, response) {
 
     post_data = QS.parse(post_data);
 
-    // "question" variable global -> visible en controlador
     question  = (post_data.preg || url.query.preg);
     answer  = (post_data.answ || url.query.answ);
     var route = (post_data._method || request.method) + ' ' + url.pathname;  
